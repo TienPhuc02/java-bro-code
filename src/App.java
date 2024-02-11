@@ -1,20 +1,15 @@
 public class App {
     public static void main(String[] args)  {
 
-        int x; // khai báo
-        x =123; // gán giá trị
-        int a =235; //khởi tạo biến và giá trị
-        System.out.println(a);// number 
-        System.out.println("My number is : " + a );
+      //swap 2 variable
+      String x= "water";
+      String y = "Kool-Aid";
+      String temp =x;
+      x=y;
+      y=temp; 
+      System.out.println("x : " + x );
+      System.out.println("y : " + y );
 
-        long b =123123123123l; // khai báo một giá trị long 
-
-        float c= 3.14f;
-        double d=3.14;
-        boolean z=true;
-        char symbol = '@';
-        String name = " Phuc";
-         
 
     }
 }
