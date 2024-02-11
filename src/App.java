@@ -1,14 +1,15 @@
-import java.util.Scanner;
-
+import javax.swing.*;
 public class App {
     public static void main(String[] args)  {
 
-     //expression: bieu thuc = operands : toan tu  +  operators : toan hang
-     //operands: types, variable,numbers, quantity
-     //operators: + - * / % ++ 
-     double friends =10;
-     friends =(double)friends/3 ;
-        
+        String name = JOptionPane.showInputDialog("Enter your name");
+        JOptionPane.showMessageDialog(null, "Hello " +name );
+        int age = Integer.parseInt(JOptionPane.showInputDialog("Enter your age"));
+        JOptionPane.showMessageDialog(null, "I am " +age + "years old." );
+        double heigt = Double.parseDouble(JOptionPane.showInputDialog("Enter your heigt"));
+        JOptionPane.showMessageDialog(null, "I am " +heigt + "cm" );
+
+
 
     }
 }
