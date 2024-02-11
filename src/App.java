@@ -4,23 +4,11 @@ import javax.swing.*;
 import java.util.*;
 public class App {
     public static void main(String[] args)  {
-       //logic operator:&& ,|| , !
+       //for loop
 
-
-       // while loop 
-       Scanner scanner = new Scanner(System.in);
-       String name ="";
-       String name1="";
-       while(name.isBlank()){
-        System.out.println("Enter your name :");
-        name =scanner.nextLine();
+       for(int i=10;i>=0;i--){
+        System.out.println(i);
        }
-
-       //do while -> thuc hien truoc kiem tra sau
-       do {
-        System.out.println("Enter your name :");
-        name1 =scanner.nextLine();
-       }while(name1.isBlank());
-       System.out.println("hello " + name);
+       System.out.println("Happy new year!");
     }
 }
