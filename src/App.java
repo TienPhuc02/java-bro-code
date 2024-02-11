@@ -1,27 +1,18 @@
 import java.util.Scanner;
 
 import javax.swing.*;
+import java.util.*;
 public class App {
     public static void main(String[] args)  {
-    double x= 3.14;
-    double y = 10;
-    double z= Math.max(x, y);
-    double t= Math.min(x, y);
-    double q= Math.abs(y);//tim gia tri tuyet doi
-    double w= Math.sqrt(y);//tim gia tri tuyet doi
-    System.out.println(z);
-    System.out.println(t);
-    System.out.println(q);
-
-    //Math : round , ceil,floor,
-
-    //lab
-    //a,b,c
-    Scanner scanner= new Scanner(System.in);
-    double canhVuong1= scanner.nextDouble();
-    double canhVuong2= scanner.nextDouble();
-    double canhHuyen= Math.sqrt(canhVuong1*canhVuong1 + canhVuong2*canhVuong2);
-    System.out.println(canhHuyen);
-    scanner.close();
+        Random random =new Random();
+        int x  = random.nextInt(10); //0->10
+        int y  = random.nextInt(10)+1; //1->10
+        double z= random.nextDouble();
+        boolean BOolean =random.nextBoolean();
+        System.out.println(x);
+        System.out.println(y);
+        System.out.println(z);
+        System.out.println(BOolean);
+    
     }
 }
