@@ -2,20 +2,21 @@ import javax.swing.*;
 import java.util.*;
 public class App {
     public static void main(String[] args)  {
-   // for-each = 	traversing technique to iterate through the elements in an array/collection
-		//				less steps, more readable
-		//				less flexible
-		
-		//String[] animals = {"cat","dog","rat","bird"};
-		ArrayList<String> animals = new ArrayList<String>();
-		
-		animals.add("cat");
-		animals.add("dog");
-		animals.add("rat");
-		animals.add("bird");
-		
-		for(String i : animals) {
-			System.out.println(i);
-		}
+        String name ="Phuc";
+        int age=22;
+        hello(name,age); //phuong thuc tinh~ ko the tham chieu den phuong thuc khong tinh~
+
+        int x=3;
+        int y=4;
+        int z = sum(x, y);
+        System.out.println(z);
+        System.out.println(sum(x,y));
+    }
+    static void hello(String name,int age){
+     System.out.println("hello" + name + ".I am" + age + "years old");
+    }
+
+    static int sum (int x, int y){
+        return (x+y);
     }
 }
